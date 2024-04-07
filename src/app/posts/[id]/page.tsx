@@ -1,6 +1,6 @@
 const fetchPost = async (postId: string) => {
   const post = await fetch(
-    `https://nextjs-course-umber-eight.vercel.app/api/posts/${postId}`,
+    "https://nextjs-course-umber-eight.vercel.app/api/posts/1",
     {
       method: "GET",
     }
@@ -13,10 +13,10 @@ export async function generateMetadata({ params }: any) {
   const { post } = await fetchPost(params.id);
   console.log(post);
 
-  // return {
-  //   title: post[0].title,
-  //   description: post[0].description,
-  // };
+  return {
+    title: post[0].title,
+    description: post[0].description,
+  };
 }
 
 export default function PostId({ params }: any) {
