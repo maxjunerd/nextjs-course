@@ -1,6 +1,6 @@
 const fetchPost = async (postId: string) => {
   const post = await fetch(
-    `https://nextjs-course-ie9bjetpf-chayannon-tonsais-projects.vercel.app/api/posts/${postId}`,
+    `https://nextjs-course-umber-eight.vercel.app//api/posts/${postId}`,
     {
       method: "GET",
     }
