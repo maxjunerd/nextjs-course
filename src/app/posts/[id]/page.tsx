@@ -1,7 +1,10 @@
 const fetchPost = async (postId: string) => {
-  const post = await fetch(`http://localhost:3000/api/posts/${postId}`, {
-    method: "GET",
-  });
+  const post = await fetch(
+    `http://nextjs-course-ie9bjetpf-chayannon-tonsais-projects.vercel.app/api/posts/${postId}`,
+    {
+      method: "GET",
+    }
+  );
 
   console.log(post.json);
 
